@@ -41,3 +41,19 @@ select 100-null from dual;
 desc employees;
 select * from employees where commission_pct is not null;
 select * from employees where commission_pct is null;
+select employee_id, first_name, commission_pct from employees order by commission_pct desc;
+--order by desc 사번을 기준으로 오름차순으로 정렬
+select employee_id, first_name from employees order by employee_id asc;
+select department_id, max(salary), min(salary), sum(salary), round(avg(salary),1), count(salary)
+from employees where department_id>=70 group by department_id having sum(salary)>=30000;
+--문자열 일부만 추출 substr(대상, 시작위치, 추출개수)
+select substr('database',1,3) from dual;
+--20번 부서에서 사원들의 입사 년도 가져오기
+select employee_id, first_name, substr(hire_date,1,2)||'년도' as "입사년도" from employees where department_id=20;
+SELECT TRIM(LEADING FROM ' ABCD ') LT, LENGTH(TRIM(LEADING FROM 'ABCD ')) LT_LEN,
+TRIM(TRAILING FROM ' ABCD ') RT, LENGTH(TRIM(TRAILING FROM 'ABCD ')) RT_LEN, TRIM(BOTH FROM 'ABCD ') BOTH1, LENGTH(TRIM(BOTH FROM 'ABCD')) BOTH1,
+TRIM('ABCD') BOTHT2, LENGTH(TRIM('ABCD')) BOTHLEN2 FROM DUAL;
+--부서 30번 소속된 직원들 근무 달 수를 구하기
+select first_name, hire_date as 입사일, sysdate as 현재날짜, round(months_between(sysdate,hire_date)) as 근무달수 from employees where department_id=30;
+--next_day() 함수의 기능
+select sysdate, to_char(sysdate,'yyyy/mm/dd hh24:mi:ss'), next_day(sysdate,'수요일') from dual;
