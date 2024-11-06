@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CUSTOMER1106" id="88C55C53-19C6-3368-F115-0EFB4AB5E202" version="3.5">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-04 02:36:00 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>88C55C53-19C6-3368-F115-0EFB4AB5E202</designId>
+</OSDM_Design>
