@@ -24,5 +24,5 @@ insert into it values(1111,NULL,3333);
 create table DEPT as select DEPARTMENT_ID, DEPARTMENT_NAME, LOCATION_ID from DEPARTMENTS;
 select * from dept;
 delete from dept;
-truncate table dept; --완전히 지워버리기(롤백도 안됨)
+truncate table dept; --구조만 남기고 완전히 지워버리기(롤백도 안됨)
 rollback;
