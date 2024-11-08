@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="REGIONS" directorySegmentName="seg_0" id="8309D76C-F480-624F-065B-5D242F8F886D">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FC93A305-D7FE-8E45-6D55-11CC68E8E6D0</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="REGION_NAME" id="5016E6F4-5022-1AC7-A8DC-396B5437CA20">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_ID" id="EE68985A-C106-642D-5C25-C47B01847529">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="REG_ID_PK" id="A5A86233-3484-B11B-DD2B-BACE3D482B78">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="REG_ID_PK" id="4D2D14FB-80E7-783A-CE9C-35BE1BAA06A9">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+<existingIndex>A5A86233-3484-B11B-DD2B-BACE3D482B78</existingIndex>
+<indexSegment>4B7629A0-326F-682B-2719-BA76E7C4970A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

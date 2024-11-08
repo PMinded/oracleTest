@@ -5,4 +5,9 @@
 <ownerDesignName>CUSTOMER1106</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>88C55C53-19C6-3368-F115-0EFB4AB5E202</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="270668A7-E313-9260-4E4C-65E2491E12A1">
+<designStoragePath>D:\oracleTest</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>
