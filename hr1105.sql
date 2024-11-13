@@ -10,6 +10,7 @@ create table EMP01(
     salary NUMBER(10,2) default 1000.0,
     CONSTRAINT EMP01_no_PK primary key(no),
     CONSTRAINT EMP01_name_UK UNIQUE(name)
+<<<<<<< HEAD
 );
 
 
@@ -73,3 +74,6 @@ select * from user_constraints where table_name='CUSTOMER';
 desc emp01;
 --제약조건 NOT NULL
 alter table emp01 modify salary number(0,1)
+=======
+);
+>>>>>>> 77f90c28589ac6a3373eda00a38e6f1b6425aadf
