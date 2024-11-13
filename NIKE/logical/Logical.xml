@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5B7770ED-F66A-DCA5-8D91-272BAA54A92F" mainViewID="DFDA5790-2055-7D74-5C71-1F72047CBA04">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-08 07:46:05 UTC</createdTime>
+<ownerDesignName>NIKE</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

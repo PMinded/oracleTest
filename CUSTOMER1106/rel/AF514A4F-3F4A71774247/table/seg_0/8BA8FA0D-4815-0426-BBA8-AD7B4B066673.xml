@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BA8FA0D-4815-0426-BBA8-AD7B4B066673" schemaObject="BA4290BA-E7A1-8448-A0A4-21E6E5A68D19" name="JOBS">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOBS</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[jobs table with job titles and salary ranges. Contains 19 rows.
+References with employees and job_history table.]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>A717C9DB-77CD-07E1-0700-D4BA057F584B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_ID" id="D36E0641-5996-AD6E-D5E4-2DC25D4B74B7">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of jobs table.]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>4317BEC2-37E9-F693-455C-4A7B1E778D83</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_TITLE" id="E719CDC0-2479-A47B-F0FD-2C8F7DD8AC99">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>JOB_TITLE</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>96D794EB-DCD5-093B-E9C9-7498ADE7DA8D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 BYTE</dataTypeSize>
+<ownDataTypeParameters>35 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JOB_TITLE_NN</notNullConstraintName>
+</Column>
+<Column name="MIN_SALARY" id="EF15E664-2748-5ADE-EDEE-6403A331C2BF">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>MIN_SALARY</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Minimum salary for a job title.]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>F6A84F82-3053-05EB-20E2-60C9C46E2369</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_SALARY" id="66A45B9D-379C-83F7-318F-51F5D1796AB2">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>MAX_SALARY</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Maximum salary for a job title]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>6A9E144E-69FE-3D1E-C13B-4924652EB854</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF49DF40-C362-EFCB-D0C9-B0A055FA9A1C" name="JOB_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_ID_PK</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>EE8A63A3-9EF3-F1B6-1B38-655A832EB0C1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D36E0641-5996-AD6E-D5E4-2DC25D4B74B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0EC51D6-C743-6DD7-7C1B-33E474479525" schemaObject="BA4290BA-E7A1-8448-A0A4-21E6E5A68D19" name="JOB_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_ID_PK</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>76194D97-5E7D-A19E-7941-347BF7FF8F6B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D36E0641-5996-AD6E-D5E4-2DC25D4B74B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

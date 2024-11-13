@@ -41,6 +41,34 @@ select 100-null from dual;
 desc employees;
 select * from employees where commission_pct is not null;
 select * from employees where commission_pct is null;
+<<<<<<< HEAD
+SELECT EMPLOYEE_ID, FIRST_NAME, COMMISSION_PCT FROM EMPLOYEES ORDER BY COMMISSION_PCT DESC;
+-- ORDER BY ASC, DESC  사번을 기준으로 오름차순으로 정렬
+SELECT EMPLOYEE_ID, FIRST_NAME FROM EMPLOYEES ORDER BY EMPLOYEE_ID DESC; 
+-- GROUP BY 
+SELECT DEPARTMENT_ID, SUM(SALARY) FROM EMPLOYEES
+GROUP BY DEPARTMENT_ID HAVING DEPARTMENT_ID = 30;
+
+SELECT  * FROM EMPLOYEES;
+SELECT  * FROM EMPLOYEES WHERE DEPARTMENT_ID >= 70;
+SELECT DEPARTMENT_ID, SALARY FROM EMPLOYEES WHERE DEPARTMENT_ID >= 70;
+SELECT DEPARTMENT_ID, SALARY FROM EMPLOYEES WHERE DEPARTMENT_ID >= 70 GROUP BY DEPARTMENT_ID ;
+SELECT DEPARTMENT_ID, MAX(SALARY), MIN(SALARY),SUM(SALARY) ROUND(AVG(SALARY),1), COUNT(SALARY) FROM EMPLOYEES WHERE DEPARTMENT_ID >= 70 GROUP BY DEPARTMENT_ID ;
+
+--현재시간표션
+select sysdate from dual;
+select to_char(sysdate,'YYYY/MM/DD HH24:MI:SS') from dual;
+select floor(sysdate - to_date('2024/11/05','YYYY/MM/DD')) from dual;
+--숫자를 우리가 원하는 형식으로 출력하기 1234567.23->$1,234,567.23
+select to_char(1234567.23,'L999,999,999.99') as money from dual;
+select first_name, trim(to_char(salary,'L999,999,999,999.99')) as money from employees;
+
+--문자+문자=숫자
+select to_number('10,000','999,999')+to_number('20,000','999,999') from dual;
+
+--NVL
+select first_name,salary,nvl(commission_pct,0),job_id from employees order by job_id;
+=======
 select employee_id, first_name, commission_pct from employees order by commission_pct desc;
 --order by desc 사번을 기준으로 오름차순으로 정렬
 select employee_id, first_name from employees order by employee_id asc;
@@ -57,3 +85,4 @@ TRIM('ABCD') BOTHT2, LENGTH(TRIM('ABCD')) BOTHLEN2 FROM DUAL;
 select first_name, hire_date as 입사일, sysdate as 현재날짜, round(months_between(sysdate,hire_date)) as 근무달수 from employees where department_id=30;
 --next_day() 함수의 기능
 select sysdate, to_char(sysdate,'yyyy/mm/dd hh24:mi:ss'), next_day(sysdate,'수요일') from dual;
+>>>>>>> 77f90c28589ac6a3373eda00a38e6f1b6425aadf

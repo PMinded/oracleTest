@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14FC9002-8931-B3D7-5127-0A290DD9D006" schemaObject="BA4290BA-E7A1-8448-A0A4-21E6E5A68D19" name="COUNTRIES">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>COUNTRIES</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[country table. Contains 25 rows. References with locations table.]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>7CA86C7F-596F-AD4A-C483-286319E51D3B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="DE7991C3-8CFE-EBD8-FDC8-B950B8ED2241">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of countries table.]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>B22FE9A7-EDD8-4ECE-7257-8F2D446A9F1A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COUNTRY_ID_NN</notNullConstraintName>
+</Column>
+<Column name="COUNTRY_NAME" id="FF3F06F0-4240-0837-2AC1-919C8FFF029E">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_NAME</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country name]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>ED33C39F-8A6E-0234-CD0D-F413F0C94218</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_ID" id="E339F822-DB62-DE2E-1EAB-3323C683C930">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>REGION_ID</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Region ID for the country. Foreign key to region_id column in the departments table.]]></commentInRDBMS>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>3377FFFA-BCFF-CA44-5067-01ACCCA21B5C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D65A64F-7F63-0356-A3BA-18F950A5F1E8" referredColumn="EE68985A-C106-642D-5C25-C47B01847529"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="003F3976-5CF6-F680-9D09-6E212C28BDDB" schemaObject="BA4290BA-E7A1-8448-A0A4-21E6E5A68D19" name="COUNTRY_C_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>COUNTRY_C_ID_PK</sourceObjName>
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<importedID>DEE861A4-B505-2F8A-6050-EBA1D5588693</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE7991C3-8CFE-EBD8-FDC8-B950B8ED2241"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A208C52C-7C31-9FC9-0418-3FAB9A5F55A0" name="COUNTR_REG_FK">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E339F822-DB62-DE2E-1EAB-3323C683C930"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

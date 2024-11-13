@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="EMPLOYEES" directorySegmentName="seg_0" id="7AF3EB26-8E9C-02B5-CEDF-4C1683E79BFC">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FC93A305-D7FE-8E45-6D55-11CC68E8E6D0</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MANAGER_ID" id="340A8CB2-AD45-6B3F-36D2-971EB122BCE1">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIRE_DATE" id="4C19B4DD-0B12-9F11-B47B-1CC71AB02ED3">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALARY" id="5342962A-4332-E6EF-57E4-32CC0FD57BF1">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="5DC9E77C-8EF7-4F71-03A2-0427C12CFD71">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="89381024-8063-9014-C4AF-41A689F2CE87">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE_NUMBER" id="8E1B2591-7DA0-AEF7-A4B1-BFC6D2389D4E">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="A4D5BE3C-921D-8168-FBF7-0B6A7B71F799">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAST_NAME" id="C4EC6550-2AEC-F53B-6CB8-08FDD7DC0A63">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_ID" id="CA897C13-CB9E-66D1-224A-96D4517BBBE0">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIRST_NAME" id="DAE736FC-E9EB-ACF6-2896-0D37BF10DBB7">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMISSION_PCT" id="E26F0C87-4094-36E0-9F56-B9594A1C2D1D">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_EMAIL_UK" id="57064EF8-924B-C130-E743-5144CAE2B515">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_NAME_IX" id="74AD8F9F-16A6-0BE6-6EAF-BCA01102E18A">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_EMP_ID_PK" id="7A5C083C-4F21-4185-B70C-9F82BD6A0CE6">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_MANAGER_IX" id="982B0E88-7E08-3CFF-443B-DA369CF6D752">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_JOB_IX" id="ADE698DB-C05F-FC14-A0FF-37F80A13C123">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMP_DEPARTMENT_IX" id="BE2A98A9-40D2-1CA3-B2CB-8CC20EC54A31">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<schemaObject>BA4290BA-E7A1-8448-A0A4-21E6E5A68D19</schemaObject>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_MANAGER_FK" id="393B90F7-EFB8-190F-CC40-C002A2F73932">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_JOB_FK" id="B1B86D3F-C5A5-4A69-10CD-972AE9733A84">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMP_DEPT_FK" id="ED9413CC-D7C6-BF83-AC23-FAB839C4823B">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMP_EMP_ID_PK" id="ECD1C88D-CE75-5CC9-547F-E1F02EB3D1F7">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+<existingIndex>7A5C083C-4F21-4185-B70C-9F82BD6A0CE6</existingIndex>
+<indexSegment>4B7629A0-326F-682B-2719-BA76E7C4970A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="EMP_EMAIL_UK" id="9CDA0720-D286-5F80-EC79-F6AA0C67D404">
+<createdBy>MSI</createdBy>
+<createdTime>2024-11-06 06:43:33 UTC</createdTime>
+<ownerDesignName>CUSTOMER1106</ownerDesignName>
+<segment>4B7629A0-326F-682B-2719-BA76E7C4970A</segment>
+<tableSpace>FC8DA99F-CE9F-4058-0312-F81513B342E1</tableSpace>
+<existingIndex>57064EF8-924B-C130-E743-5144CAE2B515</existingIndex>
+<indexSegment>4B7629A0-326F-682B-2719-BA76E7C4970A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>
