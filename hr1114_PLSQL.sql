@@ -75,7 +75,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, DEPARTMENT_ID FROM EMPLOYEES WHERE FI
 
 
 --PL/SQL
---내용을 employee 최고경영자 사원번호, 이름, 담당업무, 부서번호를 출력하시오(레코드변수 활용)
+--내용을 employee 최고경영자 사원번호, 이름, 담당업무, 부서번호를 출력하시오(로우 타입변수 활용)
 DECLARE
     --로우 타입 변수선언
     EMP_RECORD EMPLOYEES%ROWTYPE;
@@ -84,5 +84,25 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('사원번호 : '||EMP_RECORD.EMPLOYEE_ID);
     DBMS_OUTPUT.PUT_LINE('이름 : '||EMP_RECORD.FIRST_NAME || ' ' || EMP_RECORD.LAST_NAME);
     DBMS_OUTPUT.PUT_LINE('부서번호 : '||EMP_RECORD.DEPARTMENT_ID);
+END;
+/
+
+
+select employee_id, first_name, salary, salary*12+(nvl(commission_pct,0)*salary) as "연봉" from employees where manager_id is null;
+
+DECLARE
+    --로우 타입 변수선언, 연봉타입선언
+    EMP_RECORD EMPLOYEES%ROWTYPE;
+    TOTAL_SALARY NUMBER(10,2);
+BEGIN
+    SELECT * INTO EMP_RECORD FROM EMPLOYEES WHERE MANAGER_ID IS NULL;
+    
+    IF(EMP_RECORD.COMMISSION_PCT IS NULL)THEN EMP_RECORD.COMMISSION_PCT :=0;
+    END IF;
+    
+    TOTAL_SALARY := EMP_RECORD.SALARY*12+(EMP_RECORD.SALARY*EMP_RECORD.COMMISSION_PCT);
+    DBMS_OUTPUT.PUT_LINE('사원번호 : '||EMP_RECORD.EMPLOYEE_ID);
+    DBMS_OUTPUT.PUT_LINE('이름 : '||EMP_RECORD.FIRST_NAME || ' ' || EMP_RECORD.LAST_NAME);
+    DBMS_OUTPUT.PUT_LINE('전체연봉 : '||LTRIM(TO_CHAR(TOTAL_SALARY,'$999,999,999.99')));
 END;
 /
